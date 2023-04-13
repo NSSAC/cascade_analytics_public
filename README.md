@@ -22,10 +22,10 @@ Network measures can be computed for a small example.
 
 For the TN and VA networks, an HPC cluster was used.
 
-### Amro
-Modify as necessary
-* Code that converts cascade properties to feature sets. See ``./feature_extraction`` folder.
-* Simulation outputs and feature sets. See ``./data`` folder.
+### Generating machine learning features and aggregated visualizations
+Machine learning-ready tables, as well as some network property visualizations, can be calculated for real network measure data.
+* Real network measures calculated from the VA network. See ``./examples/aggregated_properties``.
+* Code that generates ML-tables and visualizations for aggregated property files, along with script to execute code that utilizes the given network measure files. See ``./feature_extraction``. 
 
 ### Galen
 
