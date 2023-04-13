@@ -31,10 +31,10 @@ from sys import exit
 from time import time
 from zipfile import ZipFile, ZIP_DEFLATED
 
-from simanalytics import cascade as ca
-from simanalytics import properties as prop
-from simanalytics import simulator as sim
-from simanalytics import study as st
+import cascade as ca
+import properties as prop
+import simulator as sim
+import study as st
 
 FORMAT="%(levelname)s:%(filename)s:%(funcName)s:%(message)s"
 
