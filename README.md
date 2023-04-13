@@ -32,7 +32,6 @@ Modify as necessary
 * Code for the learning part. See ``./scenario_identification``.
 
 ## What is not provided?
-
 ### Simulator
 Simulator code for the network diffusion process is not provided. This work
 is under review and will be made public after the review process. It has
