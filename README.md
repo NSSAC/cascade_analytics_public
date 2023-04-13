@@ -3,18 +3,18 @@ Contact: Abhijin Adiga (abhijin@virginia.edu)
 
 The experiments were performed using a high-performance computing cluster in Linux environment (https://www.rc.virginia.edu/userinfo/rivanna/overview/). Therefore, the user might encounter some SLURM commands. These can be easily replaced by normal Unix shell statements.
 
-# Organization
+## Organization
 The repository is organized in to folders. See README.md in each folder for
 more information. Each folder is discussed in the next section.
 
-# What is provided?
-## VA network
+## What is provided?
+### VA network
 The network for VA is open to public but takes up lot of space. We have
 included them in a separate link: 
 https://net.science/files/8026e893-10f6-4f03-be4b-516ea8c208a6/
 TN network is not released to the public.
 
-## Computing network measures
+### Computing network measures
 
 Network measures can be computed for a small example.
 * Example network and cascades. See ``./examples`` folder.
@@ -22,18 +22,18 @@ Network measures can be computed for a small example.
 
 For the TN and VA networks, an HPC cluster was used.
 
-## Amro
+### Amro
 Modify as necessary
 * Code that converts cascade properties to feature sets. See ``./feature_extraction`` folder.
 * Simulation outputs and feature sets. See ``./data`` folder.
 
-## Galen
+### Galen
 Modify as necessary
 * Code for the learning part. See ``./scenario_identification``.
 
-# What is not provided?
+## What is not provided?
 
-## Simulator
+### Simulator
 Simulator code for the network diffusion process is not provided. This work
 is under review and will be made public after the review process. It has
 been used extensively in previous works. More information is provided in
