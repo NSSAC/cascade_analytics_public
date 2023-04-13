@@ -12,7 +12,7 @@ Python, matplotlib, pandas, Seaborn
 ## How to run the example?
 The bash script `master_usage.sh` in the same directory contains two sample bash commands. The first will produce an ML table and the second will produce example figures for the aggregated property files in `../examples/aggregated_properties/`. To use this script, simply navigate to the current directory and run the bash script:
 
-```bash
+```
 bash master_usage.sh
 ```
 

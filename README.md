@@ -22,10 +22,10 @@ Network measures can be computed for a small example.
 
 For the TN and VA networks, an HPC cluster was used.
 
-### Generating machine learning features and aggregated visualizations
-Machine learning-ready tables, as well as some network property visualizations, can be calculated for real network measure data.
-* Real network measures calculated from the VA network. See ``./examples/aggregated_properties``.
-* Code that generates ML-tables and visualizations for aggregated property files, along with script to execute code that utilizes the given network measure files. See ``./feature_extraction``. 
+### Generating machine learning features and visualizations of network properties
+Machine learning-ready tables as well as some network property visualizations can be calculated for real network measure data.
+* Network measures calculated for the VA network. See ``./examples/aggregated_properties``.
+* Code that generates ML-tables and visualizations for aggregated property files. See ``./feature_extraction``. 
 
 ### Galen
 Modify as necessary
