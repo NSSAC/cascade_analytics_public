@@ -7,13 +7,13 @@ The scripts in this directory take property files in which properties have been 
 Both files take as input a list of cell property archives. Each archive contains a set of pandas DataFrame tables, and each of these tables contains a certain measure, aggregated at the cacsade level. To elaborate, every row contains the value of a certain measure aggregated over a single cascade in the cell.
 
 ## Example usage
-The bash script `props_driver.sh` in the same directory contains two sample bash commands. The first will produce an ML table and the second will produce example figures for the example network in `../example_network`. To use this script, simply navigate to the current directory and run the bash script:
+The bash script `master_usage.sh` in the same directory contains two sample bash commands. The first will produce an ML table and the second will produce example figures for the aggregated property files in `../examples/aggregated_properties/`. To use this script, simply navigate to the current directory and run the bash script:
 
 ```bash
-bash props_driver.sh
+bash master_usage.sh
 ```
 
-Example figures will be printed to the directoyr `feature_extraction/figs` and the ML table will be saved as `feature_extraction/exp5.T30.test.csv`.
+Example figures will be printed to the directory `feature_extraction/figures` and the ML table will be saved as `feature_extraction/exp5_T70_features.csv`.
 
 
 ## `prop_to_ml_table.py`

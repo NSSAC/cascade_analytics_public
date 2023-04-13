@@ -47,7 +47,7 @@ def main(args):
     color_map = {
         args.scenario_label_color[s]['label']:args.scenario_label_color[s]['color'] 
         for s in scenarios}
-    scenario_order = args.scenario_order
+    scenario_order = [x.replace('\\\\','\\') for x in args.scenario_order]
     color_order = [color_map[x] for x in scenario_order]
     add_scenarios_to_table(all_cells, 'labeled_paths')
     add_scenarios_to_table(all_cells, 'en_labeled_paths')
