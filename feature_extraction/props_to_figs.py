@@ -43,11 +43,11 @@ def main(args):
         os.mkdir(output_dir)
     all_cells = read_cells(args.input_format, args.cell_files, 8) 
     scenarios = determine_scenarios(all_cells)
-    scenario_map = {s:args.scenario_label_color[s]['label'] for s in scenarios}
+    scenario_map = {s:args.scenario_label_color[s]['label'].replace('&','\n') for s in scenarios}
     color_map = {
-        args.scenario_label_color[s]['label']:args.scenario_label_color[s]['color'] 
+        args.scenario_label_color[s]['label'].replace('&','\n'):args.scenario_label_color[s]['color'] 
         for s in scenarios}
-    scenario_order = [x.replace('\\\\','\\') for x in args.scenario_order]
+    scenario_order = [x.replace('&','\n') for x in args.scenario_order]
     color_order = [color_map[x] for x in scenario_order]
     add_scenarios_to_table(all_cells, 'labeled_paths')
     add_scenarios_to_table(all_cells, 'en_labeled_paths')
