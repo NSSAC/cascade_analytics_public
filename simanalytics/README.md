@@ -1,22 +1,18 @@
 # Computing properties of cascades
-(View this file on github or some markdown reader, $PROJ is the current
-repository.)
-
-Contains all scripts and usage examples for computing properties of
-cascades.
-There are three types of scripts:
-* Cascade graph construction
-* Property computation.
-* Master file(s) to show usage.
-Scripts from this folder are accessed by studies. The current study is in
-``$PROJ/KDD23/``.
 
 ## Installation and setting up environment
 Python, Anaconda, SNAP
 
-On Rivanna:
-```
-module add anaconda/2020.11-py3.8
-module add snap-stanford/6.0.0-py3.8 
-```
+## How to run the example?
+Use ``master_usage.sh``.
 
+## Main files
+* ``simprop.py`` is the frontend.
+* ``study.py`` defines the properties and methods pertaining to
+  this study. It constructs the cascade graphs with properties specific to
+  this study.
+* ``simulator.py`` contains properties and methods to handle input from the
+  simulator used.
+* ``cascade.py`` contains the definition of the cascade graph. This is the
+  core file for cascade graph construction and transformation.
+* ``properties.py`` is where all properties are computed.
