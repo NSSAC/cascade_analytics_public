@@ -11,8 +11,8 @@ import pandas as pd
 from pdb import set_trace
 from time import time
 
-from simanalytics import cascade as ca
-from simanalytics import simulator as sim
+import cascade as ca
+import simulator as sim
 
 SUPPORTED_STUDIES = ['TestEpiHiper', 'MultiVariant', 'KDD']
 NODE_SHIFT = 10000000000

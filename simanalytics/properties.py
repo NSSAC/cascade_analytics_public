@@ -15,7 +15,7 @@ from pdb import set_trace
 # import snap
 from time import time
 
-from simanalytics import cascade as ca
+import cascade as ca
 
 PROPERTIES=[ \
         'number_of_distinct_nodes',
