@@ -28,9 +28,11 @@ Machine learning-ready tables, as well as some network property visualizations, 
 * Code that generates ML-tables and visualizations for aggregated property files, along with script to execute code that utilizes the given network measure files. See ``./feature_extraction``. 
 
 ### Galen
-Modify as necessary
-* Code for the learning part. See ``./scenario_identification``.
 
+In scenario_identification, there is a JupyterLab notebook, ``identification-analysis.ipynb``.
+This notebook exhibits some of the experiments used for this paper.
+It does not show the full extent of the experiments we did due to the limited data we are able to make public.
+ 
 ## What is not provided?
 
 ### Simulator
