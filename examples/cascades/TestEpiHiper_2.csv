@@ -1,0 +1,10 @@
+tick,pid,contact_pid,exit_state
+1,10,-1,dummy
+1,4,-1,dummy
+2,1,10,dummy
+2,2,4,dummy
+3,3,4,dummy
+4,6,2,dummy
+4,7,3,dummy
+5,12,6,dummy
+6,11,12,dummy
