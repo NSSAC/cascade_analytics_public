@@ -62,7 +62,7 @@ def main(args):
     boundary_degree_tables = [(name, cell['boundary_outdegree']) for name, cell in all_cells.items()]
     node_count_tables = [(name, cell['number_of_nodes']) for name, cell in all_cells.items()]
     outdegree_tables  = [(name, cell['out_degree']) for name, cell in all_cells.items()]
-    generate_epicurve_figure(node_count_tables, scenario_map, scenario_order, color_order, 'Epicurve', output_dir, 20)
+    generate_epicurve_figure(node_count_tables, scenario_map, scenario_order, color_order, 'Epicurve', output_dir)
     generate_labeled_path_counts(s_en_label_tables, scenario_map, scenario_order, output_dir)
 
 

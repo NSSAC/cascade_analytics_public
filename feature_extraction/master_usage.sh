@@ -1,11 +1,12 @@
 # TODO: replace with commands created for example network
-python props_to_ml_table.py -c \
- ../examples/aggregated_properties/cell_1_coverage_1_seed_0_T_70.parquet.zip \
- ../examples/aggregated_properties/cell_2_coverage_1_seed_0_T_70.parquet.zip \
- ../examples/aggregated_properties/cell_3_coverage_1_seed_0_T_70.parquet.zip \
- ../examples/aggregated_properties/cell_4_coverage_1_seed_0_T_70.parquet.zip \
- -o ../examples/ml_table/exp5_T70_features.csv --input-format parquet --out-degree-bin-size 1 2 --epicurve-bin-size 1 2 \
- --boundary-out-degree-bin-size 2
+#python props_to_ml_table.py -c \
+# ../examples/aggregated_properties/cell_1_coverage_1_seed_0_T_70.parquet.zip \
+# ../examples/aggregated_properties/cell_2_coverage_1_seed_0_T_70.parquet.zip \
+# ../examples/aggregated_properties/cell_3_coverage_1_seed_0_T_70.parquet.zip \
+# ../examples/aggregated_properties/cell_4_coverage_1_seed_0_T_70.parquet.zip \
+# -o ../examples/ml_table/exp5_T70_features.csv --input-format parquet \
+# --out-degree-bin-size 1 2 --epicurve-bin-size 1 5 10 \
+# --boundary-out-degree-bin-size 1 2 5
 
 python props_to_figs.py -c \
  ../examples/aggregated_properties/cell_1_coverage_1_seed_0_T_70.parquet.zip \

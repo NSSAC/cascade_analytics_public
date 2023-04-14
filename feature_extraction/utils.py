@@ -344,9 +344,9 @@ def generate_epicurve_figure(node_count_tables, scenario_map, scenario_order, co
     for l in ax.yaxis.get_majorticklabels():
         l.set_fontsize(18)
     if vertical_line_x is not None:
-        plt.axvline(vertical_line_x, color='red')
+        ax.axvline(vertical_line_x, color='red')
     plt.grid()
-    plt.savefig(os.path.join(output_folder, 'epicurve.pdf'), bbox_inches='tight')
+    fig.savefig(os.path.join(output_folder, 'epicurve.pdf'), bbox_inches='tight')
 
 def get_per_cascade_path_averages(tables, path_col, excluded_path_string, path_lengths, extra_columns=[]):
     total_path_counts = [
@@ -468,7 +468,7 @@ def generate_labeled_path_counts(s_en_label_tables, scenario_map, scenario_order
             l.set_fontsize(16)
 
     #sns.catplot(kind = 'box', data=merged_summed_s_en_table_ordered, x='scenario', y='value', col='s_en_path', col_wrap=4, showfliers=False, sharey=False, legend_out=True, sharex=False, palette=['tab:red','tab:orange','tab:green','tab:blue'], height=4)
-    plt.savefig(os.path.join(output_folder, 'labeled_path_counts.pdf'), bbox_inches='tight')
+    fig.savefig(os.path.join(output_folder, 'labeled_path_counts.pdf'), bbox_inches='tight')
 
 def config_ax(ax):
     ax.title.set_size(22) # 16
